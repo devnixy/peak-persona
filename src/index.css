@@ -6,6 +6,53 @@
 
 @layer base {
   :root {
+    --background: 40 20% 97%;
+    --foreground: 225 25% 12%;
+
+    --card: 40 15% 94%;
+    --card-foreground: 225 25% 12%;
+
+    --popover: 40 15% 94%;
+    --popover-foreground: 225 25% 12%;
+
+    --primary: 42 78% 45%;
+    --primary-foreground: 40 20% 97%;
+
+    --secondary: 225 10% 90%;
+    --secondary-foreground: 225 20% 25%;
+
+    --muted: 225 10% 91%;
+    --muted-foreground: 225 10% 42%;
+
+    --accent: 225 10% 92%;
+    --accent-foreground: 225 25% 12%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 225 10% 86%;
+    --input: 225 10% 86%;
+    --ring: 42 78% 45%;
+
+    --radius: 0.75rem;
+
+    --glass-bg: 40 12% 95%;
+    --glass-border: 225 10% 88%;
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+
+    --sidebar-background: 40 20% 97%;
+    --sidebar-foreground: 225 25% 12%;
+    --sidebar-primary: 42 78% 45%;
+    --sidebar-primary-foreground: 40 20% 97%;
+    --sidebar-accent: 225 10% 90%;
+    --sidebar-accent-foreground: 225 25% 12%;
+    --sidebar-border: 225 10% 86%;
+    --sidebar-ring: 42 78% 45%;
+
+    font-family: 'DM Sans', system-ui, sans-serif;
+  }
+
+  .dark {
     --background: 225 20% 7%;
     --foreground: 220 15% 90%;
 
@@ -34,8 +81,6 @@
     --input: 225 12% 18%;
     --ring: 42 78% 55%;
 
-    --radius: 0.75rem;
-
     --glass-bg: 225 18% 12%;
     --glass-border: 225 15% 22%;
     --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -48,8 +93,6 @@
     --sidebar-accent-foreground: 220 15% 90%;
     --sidebar-border: 225 12% 18%;
     --sidebar-ring: 42 78% 55%;
-
-    font-family: 'DM Sans', system-ui, sans-serif;
   }
 }
 
@@ -64,7 +107,7 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased transition-colors duration-300;
   }
 
   h1, h2, h3, h4 {
