@@ -79,14 +79,17 @@ const Navbar = () => {
   const handleClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
       e.preventDefault();
-      const id = href.slice(1);
-      const el = id ? document.getElementById(id) : null;
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-      } else {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
       setMobileOpen(false);
+      const id = href.slice(1);
+      // Delay scroll slightly so mobile menu close animation doesn't interfere
+      setTimeout(() => {
+        const el = id ? document.getElementById(id) : null;
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }, 100);
     },
     []
   );
