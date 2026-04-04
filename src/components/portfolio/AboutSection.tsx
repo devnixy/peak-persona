@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code2, Palette, Zap } from "lucide-react";
-import profileImg from "@/assets/profile-placeholder.jpg";
 
 const highlights = [
   { icon: Code2, title: "Clean Code", desc: "Maintainable, tested, and well-documented solutions" },
