@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
+import profileImg from "@/assets/profile-placeholder.jpg";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -105,8 +106,13 @@ const Navbar = () => {
         <a
           href="#"
           onClick={(e) => handleClick(e, "#")}
-          className="text-xl font-serif font-semibold text-foreground tracking-tight"
+          className="flex items-center gap-2.5 text-xl font-serif font-semibold text-foreground tracking-tight"
         >
+          <img
+            src={profileImg}
+            alt="Profile"
+            className="w-8 h-8 rounded-full object-cover ring-1 ring-primary/30"
+          />
           JD<span className="text-primary">.</span>
         </a>
 
