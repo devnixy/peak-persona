@@ -225,6 +225,14 @@ const Navbar = () => {
                 );
               })}
               <a
+                href="/resume.pdf"
+                download
+                className="flex items-center gap-2 text-base text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Download size={18} />
+                Download Resume
+              </a>
+              <a
                 href="#contact"
                 onClick={(e) => handleClick(e, "#contact")}
                 className="text-sm font-medium px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-center"
