@@ -103,7 +103,7 @@ const ExperienceSection = () => {
   }));
 
   return (
-    <section id="experience" className="py-24 md:py-32">
+    <section id="experience" className="py-16 md:py-20">
       <div className="section-container" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
