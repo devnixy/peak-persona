@@ -56,7 +56,7 @@ const HeroSection = () => {
           </a>
           <a
             href="#contact"
-            className="px-7 py-3 rounded-lg border border-border text-foreground font-medium text-sm hover:bg-accent transition-all duration-300 hover:-translate-y-0.5"
+            className="px-7 py-3 rounded-lg border border-border text-foreground font-medium text-sm hover:bg-accent transition-all duration-300 hover:-translate-y-0.5 active:scale-95"
           >
             Get in Touch
           </a>
