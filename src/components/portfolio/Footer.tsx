@@ -17,7 +17,7 @@ const Footer = () => (
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+            className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:-translate-y-0.5 active:scale-95"
           >
             <Icon size={18} />
           </a>

@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { toast } from "sonner";
 
 const ContactSection = () => {
@@ -16,7 +16,6 @@ const ContactSection = () => {
       return;
     }
     setSending(true);
-    // Simulate sending — will be replaced with Lovable Cloud
     await new Promise((r) => setTimeout(r, 1000));
     toast.success("Message sent! I'll get back to you soon.");
     setForm({ name: "", email: "", message: "" });
@@ -52,6 +51,12 @@ const ContactSection = () => {
                   <Mail size={16} />
                 </div>
                 <span className="text-muted-foreground">hello@johndoe.dev</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm">
+                <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                  <Phone size={16} />
+                </div>
+                <span className="text-muted-foreground">+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <div className="p-2 rounded-lg bg-primary/10 text-primary">
@@ -96,7 +101,7 @@ const ContactSection = () => {
             <button
               type="submit"
               disabled={sending}
-              className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <Send size={16} />
               {sending ? "Sending..." : "Send Message"}

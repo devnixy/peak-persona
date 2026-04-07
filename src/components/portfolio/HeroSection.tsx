@@ -50,13 +50,13 @@ const HeroSection = () => {
         >
           <a
             href="#projects"
-            className="px-7 py-3 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5"
+            className="px-7 py-3 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 active:scale-95"
           >
             View Work
           </a>
           <a
             href="#contact"
-            className="px-7 py-3 rounded-lg border border-border text-foreground font-medium text-sm hover:bg-accent transition-all duration-300 hover:-translate-y-0.5"
+            className="px-7 py-3 rounded-lg border border-border text-foreground font-medium text-sm hover:bg-accent transition-all duration-300 hover:-translate-y-0.5 active:scale-95"
           >
             Get in Touch
           </a>
@@ -78,7 +78,7 @@ const HeroSection = () => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-300"
+              className="p-2.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-300 hover:-translate-y-0.5 active:scale-95"
             >
               <Icon size={20} />
             </a>
