@@ -78,7 +78,7 @@ const HeroSection = () => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-300"
+              className="p-2.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-300 hover:-translate-y-0.5 active:scale-95"
             >
               <Icon size={20} />
             </a>
