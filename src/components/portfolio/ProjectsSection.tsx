@@ -94,13 +94,13 @@ const ProjectsSection = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="projects" className="py-24 md:py-32">
+    <section id="projects" className="py-16 md:py-20">
       <div className="section-container" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-4">Portfolio</p>
           <h2 className="text-3xl md:text-4xl font-serif font-bold">Featured Projects</h2>
