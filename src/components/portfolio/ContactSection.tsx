@@ -30,7 +30,7 @@ const ContactSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-4">Contact</p>
           <h2 className="text-3xl md:text-4xl font-serif font-bold">Get in Touch</h2>
